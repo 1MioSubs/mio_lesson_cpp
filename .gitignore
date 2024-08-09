@@ -1,0 +1,26 @@
+# Исключить временные файлы и каталоги
+*.log
+*.tmp
+/build/
+/bin/
+/*.swp
+*.suo
+*.user
+*.ncb
+*.o
+*.a
+*.so
+*.dll
+*.lib
+
+# Исключить файлы конфигурации среды
+*.env
+
+# Исключить временные файлы IDE
+.vscode/
+.idea/
+
+# Исключить папки с результатами сборки
+/CMakeFiles/
+/cmake_install.cmake
+/Makefile
