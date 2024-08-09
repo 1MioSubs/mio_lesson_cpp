@@ -50,7 +50,7 @@ void playGuessNumber(int game)
   int gameWhile = 1;
   int numUser = 0;
   int num1 = 0;
-  int num2 = 100;
+  int num2 = 10;
   int secretNumber = 0;
 
   if (game != 3)
@@ -99,7 +99,8 @@ void playGuessNumber(int game)
         }
         else
         {
-          std::srand(static_cast<unsigned>(std::time(0)));
+          std::cout << "Я загадаю число от " << num1 << " до " << num2 << " а ты попробуешь его угадать." << std::endl;
+              std::srand(static_cast<unsigned>(std::time(0)));
           secretNumber = std::rand() % (num2 - num1 + 1) + num1; // Генерация числа от 1 до 100
           testIn = 0;
         }
@@ -108,11 +109,11 @@ void playGuessNumber(int game)
   }
   else if (numUser == 0)
   {
-    std::cout << "Я загадаю число от 1 до 100, а ты попробуешь его угадать." << std::endl;
+    std::cout << "Я загадаю число от 1 до 10, а ты попробуешь его угадать." << std::endl;
 
     // Инициализация генератора случайных чисел
     std::srand(static_cast<unsigned>(std::time(0)));
-    secretNumber = std::rand() % 100 + 1; // Генерация числа от 1 до 100
+    secretNumber = std::rand() % (num2 - num1 + 1) + num1; //
   }
   else
   {
@@ -158,7 +159,7 @@ int main()
   // Установите русскую локаль
   std::setlocale(LC_ALL, "ru_RU.UTF-8");
   // std::setlocale(LC_CTYPE, "Russian_Russia.1251");
-  playGuessNumber(1);
+  playGuessNumber(0);
   return 0;
 }
 
