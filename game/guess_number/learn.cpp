@@ -130,6 +130,26 @@ private:
     return choice == 1;
   }
 
+  // bool restart()
+  // {
+  //   int choice;
+  //   while (true)
+  //   {
+  //     std::cout << "Сыграем еще раз? (1 - да, 0 - нет): ";
+  //     std::cin >> choice;
+
+  //     if (std::cin.fail() || (choice != 0 && choice != 1))
+  //     {
+  //       clearInput(); // Очистка некорректного ввода
+  //       std::cout << "Некорректный ввод. Повторите попытку." << std::endl;
+  //     }
+  //     else
+  //     {
+  //       return choice == 1; // Вернуть true, если выбрано 1, иначе false
+  //     }
+  //   }
+  // }
+
   void clearInput()
   {
     std::cin.clear();
