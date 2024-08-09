@@ -55,7 +55,7 @@ int main() {
     playGuessNumber();
     return 0;
 }
-```
+``
 
 ### Шаг 3: Пояснение кода
 
