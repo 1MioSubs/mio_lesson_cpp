@@ -20,6 +20,7 @@
 #include <iostream>
 #include <cstdlib> // для функции rand() и srand()
 #include <ctime>   // для функции time()
+#include <limits>  // для std::numeric_limits
 
 void playGuessNumber() {
     std::cout << "Добро пожаловать в игру 'Угадай число'!" << std::endl;
@@ -55,7 +56,7 @@ int main() {
     playGuessNumber();
     return 0;
 }
-```
+``
 
 ### Шаг 3: Пояснение кода
 
